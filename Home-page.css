@@ -11,6 +11,7 @@
     display: flex;
     padding: 0;
     margin: 0;
+    font-size: 18px;
 }
 
 .list li {
@@ -23,7 +24,7 @@
 }
 
 .logo{
-    font-size: 20px;
+    font-size: 30px;
     color: green;
 }
 
@@ -31,6 +32,7 @@ a{
     text-decoration: none;
     color: black;
 }
+
 
 .recipes{
     background-color: #f7f6f3;
@@ -53,6 +55,7 @@ a{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
 }
+
 
 .cookbook{
     background-color:#f7f6f3 ;
@@ -84,6 +87,12 @@ a{
     font-size: 20px;
     padding: 3px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.cookbook button {
+    margin-top: 20px;
+    padding: 10px 60px;
+    margin-left: 440px;
 }
 
 .aboutme{
@@ -127,18 +136,21 @@ a{
     font-size: 30px;
 }
 
+
 #t1 {
     color: #797c5d;
-    margin-top: 5px;
+    padding: 20px;
+    margin-top: 20px;
     margin-bottom: 5px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
+
 
 .food{
     background-color: #f7f6f3;
     display: flex;
     justify-content: space-around;
-    margin-top: 40px;
 }
 
 .food img{
@@ -160,6 +172,85 @@ a{
     padding: 0px;
     line-height: 0.5;
 }
+
+
+.food2{
+    background-color: #f7f6f3;
+    display: flex;
+    justify-content: space-around;
+}
+
+.food2 img{
+    width: auto;
+    height: auto;
+    max-width: 450px;
+    max-height: 500px;
+}
+
+.food2 button{
+    display: block;
+    margin-top: 5px;
+    padding: 5px;
+    width: 120px;
+}
+
+.food2 > div p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0px;
+    line-height: 0.5;
+}
+
+
+.footer{
+    margin-top: 40px;
+    background-color: #9ba473;
+    display: flex;
+    justify-content: space-around;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer li{
+    color: white;
+    margin: 0 20px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+#n1{
+    margin-top: 20px;
+    color: white;
+}
+
+#n2{
+    padding: 5px 20px;
+    background-color: #9ba473;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+#n3 input, #n4 input{
+    width: 100%;
+    padding: 5px;
+    background-color: #9ba473;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.footer button{
+    display: block;
+    margin-top: 5px;
+    padding: 5px 20px;
+    width: 120px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    background-color: #797c5d;
+}
+
+ 
+
+
+
+
 
 
 
