@@ -32,3 +32,24 @@ a{
     color: black;
 }
 
+.recepies{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.recepies img{
+    width: auto;
+    height: auto;
+    max-width: 450px;
+    max-height: 500px;
+
+}
+
+.recepies p{
+    text-align: center;
+    font-size: 25px;
+    color: #797c5d;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+}
