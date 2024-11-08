@@ -233,7 +233,7 @@ a{
 }
 
 #n1, #n2, #n3, #n4{
-    height: 40px;
+    height: auto;
     padding: 13px 20px;
     box-sizing: border-box;
     width: 100%;
