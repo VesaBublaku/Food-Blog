@@ -170,8 +170,8 @@ a{
 .food img{
     width: auto;
     height: auto;
-    max-width: 450px;
-    max-height: 500px;
+    max-width: 350px;
+    max-height: 400px;
 }
 
 .food button{
@@ -196,8 +196,8 @@ a{
 .food2 img{
     width: auto;
     height: auto;
-    max-width: 450px;
-    max-height: 500px;
+    max-width: 350px;
+    max-height: 400px;
 }
 
 .food2 button{
