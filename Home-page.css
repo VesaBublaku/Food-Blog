@@ -1,3 +1,11 @@
+.account{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #797c5d;
+}
+
 .nav{
     display: flex;
     flex-wrap: wrap;
