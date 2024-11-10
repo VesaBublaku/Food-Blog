@@ -43,10 +43,30 @@
                      <input type="password" placeholder="Confirm password" id="confirm_password" name="confirm_password" required>
                  </div>
                  <button type="submit">Confirm</button>
-                 <p>Already have an account?<a href="#" id="a1">Login</a></p>
+                 <p>Already have an account?<a href="#logInModal" id="a1">Login</a></p>
              </form>
          </div>
      </div>
+
+
+     <div id="logInModal" class="modal-overlay2">
+        <div class="modal2">
+            <a href="#" class="close-btn">&times;</a>
+            <form class="log-in-form" action="/login" method="post">
+                <h2>Welcome back</h2>
+                <p>Login to your account below</p>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="example@gmail.com" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                   <label for="password">Password</label>
+                   <input type="password" placeholder="Enter password" id="password" name="password" required>
+                </div>
+                <button type="submit" id="b2">Login</button>
+            </form>
+        </div>
+    </div>
 
 
     <div class="nav">
