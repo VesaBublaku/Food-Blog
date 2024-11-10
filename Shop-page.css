@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     justify-content: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: #797c5d;
+    background-color: #a4ac86;
 }
 
 .nav{
@@ -35,7 +35,7 @@
 
 .logo{
     font-size: 30px;
-    color: green;
+    color: #636b54;
 }
 
 a{
@@ -50,7 +50,7 @@ a{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
     background-color: #f7f6f3;
-    padding: 20px;
+    padding: 10px;
     margin-top: 40px;
 }
 
@@ -59,9 +59,9 @@ a{
     flex-wrap: wrap;
     justify-content: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color:#797c5d;
+    color:#636b54;
     margin-top: 60px;
-    padding: 15px;
+    padding: 10px;
     font-size: 25px;
     background-color:#f7f6f3;
 }
@@ -91,11 +91,11 @@ a{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #797c5d;
+    background-color: #a4ac86;
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 15px;
+    padding: 10px;
 }
 
 #id2{
@@ -103,9 +103,9 @@ a{
     flex-wrap: wrap;
     justify-content: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color:#797c5d;
+    color:#636b54;
     margin-top: 40px;
-    padding: 15px;
+    padding: 10px;
     font-size: 25px;
     background-color:#f7f6f3;
 }
@@ -144,9 +144,9 @@ text-align: center;
     flex-wrap: wrap;
     justify-content: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color:#797c5d;
+    color:#636b54;
     margin-top: 60px;
-    padding: 15px;
+    padding: 10px;
     font-size: 25px;
     background-color:#f7f6f3;
 }
@@ -185,9 +185,9 @@ text-align: center;
     flex-wrap: wrap;
     justify-content: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color:#797c5d;
+    color:#636b54;
     margin-top: 60px;
-    padding: 15px;
+    padding: 10px;
     font-size: 25px;
     background-color:#f7f6f3;
 }
@@ -224,7 +224,7 @@ text-align: center;
 
 .footer{
     margin-top: 40px;
-    background-color: #9ba473;
+    background-color: #a4ac86;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -276,13 +276,13 @@ text-align: center;
     box-sizing: border-box;
     width: 100%;
     max-width: 300px;
-    background-color: #9ba473;
-    border-color: #797c5d;
+    background-color: #a4ac86;
+    border-color: #636b54;
     color: white;
     font-size: 14px;
   
 }
 
 #n4{
-    background-color: #797c5d;
+    background-color: #636b54;
 }

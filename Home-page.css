@@ -6,10 +6,6 @@
     background-color: #a4ac86;
 }
 
-/*.account p{
-    color: white;
-}*/
-
 
 .nav{
     display: flex;
@@ -40,7 +36,7 @@
 
 .logo{
     font-size: 30px;
-    color: green;
+    color:#636b54;
 }
 
 a{
@@ -67,7 +63,7 @@ a{
 .recipes p{
     text-align: center;
     font-size: 25px;
-    color: #797c5d;
+    color: #636b54;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
 }
@@ -156,7 +152,7 @@ a{
 
 
 #t1 {
-    color: #797c5d;
+    color: #636b54;
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 5px;
@@ -274,7 +270,7 @@ a{
     width: 100%;
     max-width: 300px;
     background-color: #a4ac86;
-    border-color: #737a5d;
+    border-color: #636b54;
     color: white;
     font-size: 14px;
 }
@@ -366,7 +362,7 @@ button[type="submit"] {
     font-family:Georgia, 'Times New Roman', Times, serif ;
     font-size: 1em;
     color: #ffffff;
-    background-color:#797c5d;
+    background-color:#636b54;
     border: none;
     border-radius: 5px;
     margin-top: 5px;
@@ -451,7 +447,7 @@ button[type="submit"] {
     font-family:Georgia, 'Times New Roman', Times, serif ;
     font-size: 1em;
     color: #ffffff;
-    background-color:#797c5d;
+    background-color:#636b54;
     border: none;
     border-radius: 5px;
     margin-top: 50px;

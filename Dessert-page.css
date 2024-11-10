@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     justify-content: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: #797c5d;
+    background-color: #a4ac86;
 }
 
 .nav{
@@ -35,7 +35,7 @@
 
 .logo{
     font-size: 30px;
-    color: green;
+    color: #636b54;
 }
 
 a{
@@ -50,7 +50,7 @@ a{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
     background-color: #f7f6f3;
-    padding: 20px;
+    padding: 10px;
     margin-top: 40px;
 }
 
@@ -181,13 +181,13 @@ a{
     height: 40px;
     border-radius: 15px;
     border: gray;
-    background-color: #797c5d;
+    background-color: #636b54;
     color: white;
 }
 
 .footer{
     margin-top: 40px;
-    background-color: #9ba473;
+    background-color: #a4ac86;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -239,13 +239,13 @@ a{
     box-sizing: border-box;
     width: 100%;
     max-width: 300px;
-    background-color: #9ba473;
-    border-color: #797c5d;
+    background-color: #a4ac86;
+    border-color: #636b54;
     color: white;
     font-size: 14px;
   
 }
 
 #n4{
-    background-color: #797c5d;
+    background-color: #636b54;
 }
