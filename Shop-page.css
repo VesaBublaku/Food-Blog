@@ -127,7 +127,10 @@ a{
     display: block;
     margin-top: 5px;
     padding: 5px;
-    width: 250px;
+    margin-left: 30px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
 }
 
 .utensils > div p{
@@ -165,7 +168,10 @@ text-align: center;
     display: block;
     margin-top: 5px;
     padding: 5px;
-    width: 250px;
+    margin-left: 30px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
 }
 
 .bakeware > div p{
@@ -204,7 +210,10 @@ text-align: center;
     display: block;
     margin-top: 5px;
     padding: 5px;
-    width: 250px;
+    margin-left: 30px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
 }
 
 .cutlery > div p{
