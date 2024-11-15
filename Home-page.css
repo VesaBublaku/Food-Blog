@@ -279,6 +279,15 @@ a{
     background-color: #636b54;
 }
 
+.footer-3{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 10px;
+    color: white;
+    height: 200px;
+}
+
 
 .modal-overlay {
     display: none;
