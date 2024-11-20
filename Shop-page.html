@@ -9,8 +9,63 @@
 <body>
 
     <div class="account">
-        <a href=""> <p>Save your Favorite Recipes (Create an Account)</p></a>
+        <a href="#signUpModal"> <p>Save your Favorite Recipes (Create an Account)</p></a>
      </div>
+
+     <div id="signUpModal" class="modal-overlay">
+        <div class="modal">
+            <a href="#" class="close-btn">&times;</a>
+            <form class="sign-up-form" action="/signup" method="post">
+                <h2>Sign Up</h2>
+                <div class="input-group">
+                    <label for="username">Full Name</label>
+                    <input type="text" placeholder="Enter full name" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="example@gmail.com" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="date">Date of Birth</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="input-group">
+                   <label for="phone_number">Phone Number</label>
+                   <input type="tel" placeholder="044-111-222" id="phone_number" name="phone_number" required>
+                </div>
+                <div class="input-group">
+                   <label for="password">Password</label>
+                   <input type="password" placeholder="Enter password" id="password" name="password" required>
+                </div>
+                <div class="input-group">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" placeholder="Confirm password" id="confirm_password" name="confirm_password" required>
+                </div>
+                <button type="submit">Confirm</button>
+                <p>Already have an account?<a href="#logInModal" id="a1">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+
+    <div id="logInModal" class="modal-overlay2">
+       <div class="modal2">
+           <a href="#" class="close-btn">&times;</a>
+           <form class="log-in-form" action="/login" method="post">
+               <h2>Welcome back</h2>
+               <p>Login to your account below</p>
+               <div class="input-group">
+                   <label for="email">Email</label>
+                   <input type="email" placeholder="example@gmail.com" id="email" name="email" required>
+               </div>
+               <div class="input-group">
+                  <label for="password">Password</label>
+                  <input type="password" placeholder="Enter password" id="password" name="password" required>
+               </div>
+               <button type="submit" id="b2">Login</button>
+           </form>
+       </div>
+   </div>
     
     <div class="nav">
         <div class="logo">Bite by Bite</div>
