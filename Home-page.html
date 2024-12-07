@@ -12,61 +12,60 @@
         <a href="#signUpModal"> <p>Save your Favorite Recipes (Create an Account)</p></a> 
      </div>
  
-    
      <div id="signUpModal" class="modal-overlay">
-         <div class="modal">
-             <a href="#" class="close-btn">&times;</a>
-             <form class="sign-up-form" action="/signup" method="post">
-                 <h2>Sign Up</h2>
-                 <div class="input-group">
-                     <label for="username">Full Name</label>
-                     <input type="text" placeholder="Enter full name" id="username" name="username" required>
-                 </div>
-                 <div class="input-group">
-                     <label for="email">Email</label>
-                     <input type="email" placeholder="example@gmail.com" id="email" name="email" required>
-                 </div>
-                 <div class="input-group">
-                     <label for="date">Date of Birth</label>
-                     <input type="date" id="date" name="date" required>
-                 </div>
-                 <div class="input-group">
-                    <label for="phone_number">Phone Number</label>
-                    <input type="tel" placeholder="044-111-222" id="phone_number" name="phone_number" required>
-                 </div>
-                 <div class="input-group">
-                    <label for="password">Password</label>
-                    <input type="password" placeholder="Enter password" id="password" name="password" required>
-                 </div>
-                 <div class="input-group">
-                     <label for="confirm_password">Confirm Password</label>
-                     <input type="password" placeholder="Confirm password" id="confirm_password" name="confirm_password" required>
-                 </div>
-                 <button type="submit">Confirm</button>
-                 <p>Already have an account?<a href="#logInModal" id="a1">Login</a></p>
-             </form>
-         </div>
-     </div>
-
-
-     <div id="logInModal" class="modal-overlay2">
-        <div class="modal2">
+        <div class="modal">
             <a href="#" class="close-btn">&times;</a>
-            <form class="log-in-form" action="/login" method="post">
-                <h2>Welcome back</h2>
-                <p>Login to your account below</p>
+            <form class="sign-up-form" action="/signup" method="post">
+                <h2>Sign Up</h2>
+                <div class="input-group">
+                    <label for="username">Full Name</label>
+                    <input type="text" placeholder="Enter full name" id="username" name="username" required>
+                </div>
                 <div class="input-group">
                     <label for="email">Email</label>
                     <input type="email" placeholder="example@gmail.com" id="email" name="email" required>
                 </div>
                 <div class="input-group">
+                    <label for="date">Date of Birth</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="input-group">
+                   <label for="phone_number">Phone Number</label>
+                   <input type="tel" placeholder="044-111-222" id="phone_number" name="phone_number" required>
+                </div>
+                <div class="input-group">
                    <label for="password">Password</label>
                    <input type="password" placeholder="Enter password" id="password" name="password" required>
                 </div>
-                <button type="submit" id="b2">Login</button>
+                <div class="input-group">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" placeholder="Confirm password" id="confirm_password" name="confirm_password" required>
+                </div>
+                <button type="submit" id="signupSubmit">Confirm</button>
+                <p>Already have an account?<a href="#logInModal" id="a1">Login</a></p>
             </form>
         </div>
     </div>
+
+
+    <div id="logInModal" class="modal-overlay2">
+       <div class="modal2">
+           <a href="#" class="close-btn">&times;</a>
+           <form class="log-in-form" action="/login" method="post">
+               <h2>Welcome back</h2>
+               <p>Login to your account below</p>
+               <div class="input-group">
+                   <label for="email">Email</label>
+                   <input type="email" placeholder="example@gmail.com" id="email_login" name="email" required>
+               </div>
+               <div class="input-group">
+                  <label for="password">Password</label>
+                  <input type="password" placeholder="Enter password" id="password_login" name="password" required>
+               </div>
+               <button type="submit" id="b2">Login</button>
+           </form>
+       </div>
+   </div>
 
 
     <div class="nav">
@@ -285,5 +284,82 @@
     </div>
     </div>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    
+    const loginForm = document.querySelector(".log-in-form");
+    loginForm.addEventListener("submit", function (event) {
+        event.preventDefault(); 
+
+        const email_login = document.getElementById("email_login").value.trim();
+        const password_login = document.getElementById("password_login").value.trim();
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email_login)) {
+            alert("Invalid email address.");
+            return false;
+        }
+
+        if (password_login === "") {
+            alert("Password cannot be empty.");
+            return false;
+        }
+
+        alert("Log in successful!");
+        window.location.href = "Home-page.html"; 
+    });
+
+    const signupForm = document.querySelector(".sign-up-form");
+    signupForm.addEventListener("submit", function (event) {
+        event.preventDefault(); 
+
+        const username = document.getElementById("username").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const date = document.getElementById("date").value.trim();
+        const phoneNumber = document.getElementById("phone_number").value.trim();
+        const password = document.getElementById("password").value.trim();
+        const confirmPassword = document.getElementById("confirm_password").value.trim();
+
+        const usernameRegex = /^[a-zA-Z0-9_]{3,16}$/;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
+        const phoneNumberRegex = /^\+?[0-9\s\-()]{7,15}$/;
+        const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
+
+        if (!usernameRegex.test(username)) {
+            alert("Username must be 3–16 characters long and can contain letters, numbers, and underscores.");
+            return false;
+        }
+
+        if (!emailRegex.test(email)) {
+            alert("Invalid email address.");
+            return false;
+        }
+
+        if (!dateRegex.test(date)) {
+            alert("Date must be in the format YYYY-MM-DD.");
+            return false;
+        }
+
+        if (!phoneNumberRegex.test(phoneNumber)) {
+            alert("Invalid phone number.");
+            return false;
+        }
+
+        if (!passwordRegex.test(password)) {
+            alert("Password must be at least 8 characters long, include a letter, a number, and a special character.");
+            return false;
+        }
+
+        if (confirmPassword !== password) {
+            alert("Passwords do not match.");
+            return false;
+        }
+
+        alert("Sign up successful!");
+        window.location.href = "Home-page.html"; 
+    });
+});
+    </script>
 </body>
 </html>
