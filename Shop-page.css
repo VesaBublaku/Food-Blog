@@ -110,20 +110,50 @@ a{
     background-color:#f7f6f3;
 }
 
-.utensils{
+.slider, .slider2, .slider3 {
+    display: flex;
+    position: relative;
+    overflow-x: hidden;
+    height: 390px;
+}
+
+.slider-width, .slider2-width, .slider3-width{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    left: 0;
+    top: 0;
+    transition: 0.4s ease-in-out; 
+}
+
+.item, .item2, .item3{
+    width: 250px;
+    height: 300px;
+    margin: 0 10px;
+    text-align: center;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-around;
 }
 
-.utensils img {
+.item img, .item2 img, .item3 img{
     width: auto;
     height: auto;
     max-width: 250px;
     max-height: 300px;
 }
 
-.utensils button{
+.item p, .item2 p, .item3 p{
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0px;
+    text-align: center;
+}
+
+.item button, .item2 button, .item3 button{
     display: block;
     margin-top: 5px;
     padding: 5px;
@@ -133,10 +163,20 @@ a{
     border-radius: 5px;
 }
 
-.utensils > div p{
-font-family: Georgia, 'Times New Roman', Times, serif;
-padding: 0px;
-text-align: center;
+.buttonSlider, .buttonSlider2, .buttonSlider3{
+    margin-top: 360px;
+    align-items: center;
+    padding: 6px 12px;
+    cursor: pointer;   
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%); 
+    border-radius: 15px;
+    border: gray;
+}
+
+.buttonSlider:nth-child(2), .buttonSlider2:nth-child(2), .buttonSlider3:nth-child(2) {
+    margin-left: -74px;
 }
 
 #id3{
@@ -151,34 +191,6 @@ text-align: center;
     background-color:#f7f6f3;
 }
 
-.bakeware{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.bakeware img {
-    width: auto;
-    height: auto;
-    max-width: 250px;
-    max-height: 300px;
-}
-
-.bakeware button{
-    display: block;
-    margin-top: 5px;
-    padding: 5px;
-    margin-left: 30px;
-    width: 200px;
-    border: none;
-    border-radius: 5px;
-}
-
-.bakeware > div p{
-font-family: Georgia, 'Times New Roman', Times, serif;
-padding: 0px;
-text-align: center;
-}
 
 #id4{
     display: flex;
@@ -192,35 +204,6 @@ text-align: center;
     background-color:#f7f6f3;
 }
 
-.cutlery{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 100px;
-}
-
-.cutlery img {
-    width: auto;
-    height: auto;
-    max-width: 250px;
-    max-height: 300px;
-}
-
-.cutlery button{
-    display: block;
-    margin-top: 5px;
-    padding: 5px;
-    margin-left: 30px;
-    width: 200px;
-    border: none;
-    border-radius: 5px;
-}
-
-.cutlery > div p{
-font-family: Georgia, 'Times New Roman', Times, serif;
-padding: 0px;
-text-align: center;
-}
 
 .footer{
     margin-top: 40px;
