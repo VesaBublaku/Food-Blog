@@ -1,3 +1,32 @@
+<?php
+session_start();
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_GET['action']) && $_GET['action'] == "signup") {
+        $_SESSION["signup"] = [
+            "username" => $_POST["username"],
+            "email" => $_POST["email"],
+            "date" => $_POST["date"],
+            "phone_number" => $_POST["phone_number"],
+            "password" => $_POST["password"],
+            "confirm_password" => $_POST["confirm_password"]
+        ];
+        echo "Signup Successful!";
+        session_destroy();
+
+    } elseif (isset($_GET['action']) && $_GET['action'] == "login") {
+        $_SESSION["login"] = [
+            "email" => $_POST["email"],
+            "password" => $_POST["password"]
+        ];
+        echo "Login Successful!";
+        session_destroy();
+    }
+    exit();
+}
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,7 +44,7 @@
      <div id="signUpModal" class="modal-overlay">
         <div class="modal">
             <a href="#" class="close-btn">&times;</a>
-            <form class="sign-up-form" action="/signup" method="post">
+            <form class="sign-up-form" action="?action=signup" method="post">
                 <h2>Sign Up</h2>
                 <div class="input-group">
                     <label for="username">Full Name</label>
@@ -51,7 +80,7 @@
     <div id="logInModal" class="modal-overlay2">
        <div class="modal2">
            <a href="#" class="close-btn">&times;</a>
-           <form class="log-in-form" action="/login" method="post">
+           <form class="log-in-form" action="?action=login" method="post">
                <h2>Welcome back</h2>
                <p>Login to your account below</p>
                <div class="input-group">
