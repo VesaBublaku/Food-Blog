@@ -18,9 +18,11 @@
             <li><a href="Myrecipebox-page.html">My Recipe Box</a></li>
         </ul>
 
-        <div>
-            <i class="fas fa-search"></i>
-            <input type="text" name="" id="">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Enter your search term" />
+            <div class="searchIcon" id="searchIcon">
+                <i class="fas fa-search"></i>
+            </div>
         </div>
     </div>
 
@@ -115,5 +117,33 @@
             <button id="n4">Subscribe</button>
         </div>
         </div>
+
+        <script>
+
+            const searchInput = document.getElementById('searchInput');
+            const searchIcon = document.getElementById('searchIcon');
+        
+            function performSearch() {
+                const query = searchInput.value.trim();
+        
+                if(query) {
+                    alert(`Searching for: ${query}`);
+                } else {
+                    alert("Please enter a search term.");
+                }
+            }
+        
+            searchIcon.addEventListener('click', () => {
+                searchIcon.style.display = 'none'; 
+                searchInput.style.display = 'inline-block'; 
+                searchInput.focus(); 
+            });
+        
+            searchInput.addEventListener('keypress', (event) => {
+                if (event.key === 'Enter') {
+                    performSearch();
+                }
+            });
+        </script>
 </body>
 </html>

@@ -16,6 +16,17 @@
     color: black;
 }
 
+
+#searchInput {
+    padding: 10px;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    flex: 1;
+    display: none;
+}
+
 .list{
     display: flex;
     flex-wrap: wrap;
@@ -112,6 +123,7 @@ a{
 
 .slider, .slider2, .slider3 {
     display: flex;
+    flex-wrap: wrap;
     position: relative;
     overflow-x: hidden;
     height: 390px;
