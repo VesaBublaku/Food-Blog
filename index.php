@@ -1,8 +1,11 @@
 <?php
 session_start();
 require_once("Database.php");
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $db = new Database();
+    $conn = $db->getConnection();
+
     if (isset($_GET['action']) && $_GET['action'] == "signup") {
         $_SESSION["signup"] = [
             "username" => $_POST["username"],
@@ -11,8 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             "phone" => $_POST["phone"],
             "password" => $_POST["password"]
         ];
-        $db = new Database();
-        $conn = $db->getConnection();
+
         $sql = "INSERT INTO user (username, email, password, date, phone) VALUES (:username, :email, :password, :date, :phone)";
         $stmt = $conn->prepare($sql);
         $stmt->bindParam(':username', $_POST["username"]);
@@ -20,22 +22,41 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->bindParam(':date', $_POST["date"]);
         $stmt->bindParam(':phone', $_POST["phone"]);
         $stmt->bindParam(':password', $_POST["password"]);
-        // Execute the query
+
         if ($stmt->execute()) {
             $_SESSION["signup_success"] = true;
         } else {
             $_SESSION["signup_success"] = false;
         }
+        exit();
     } elseif (isset($_GET['action']) && $_GET['action'] == "login") {
         $_SESSION["login"] = [
             "email" => $_POST["email"],
             "password" => $_POST["password"]
         ];
-        echo "Login Successful!";
+
+        $email = $_POST["email"];
+        $password = $_POST["password"];
+
+        $sql = "SELECT * FROM user WHERE email = :email";
+        $stmt = $conn->prepare($sql);
+        $stmt->bindParam(':email', $email);
+        $stmt->execute();
+        $user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        if ($user && password_verify($password, $user["password"])) {
+            $_SESSION["user"] = [
+                "id" => $user["id"],
+                "username" => $user["username"],
+                "email" => $user["email"],
+            ];
+            echo "Login Successful!";
+        } else {
+            echo "Invalid email or password.";
+        }
+        exit();
     }
-    exit();
 }
-session_destroy();
 ?>
 
 <!DOCTYPE html>
@@ -405,10 +426,17 @@ session_destroy();
         }
         
         const xhr = new XMLHttpRequest();
-        xhr.open('POST', 'index.php?action=signup', true);
-        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-        xhr.send(`username=${encodeURIComponent(username)}&email=${encodeURIComponent(email)}&date=${encodeURIComponent(date)}&phone=${encodeURIComponent(phone)}&password=${encodeURIComponent(password)}`);
+    xhr.open('POST', 'index.php?action=signup', true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.onload = function () {
+        if (xhr.status === 200) {
+            alert("Sign up successful!");
+            window.location.href = "Home-page.html";
+        }
+    };
+    xhr.send(`username=${encodeURIComponent(username)}&email=${encodeURIComponent(email)}&date=${encodeURIComponent(date)}&phone=${encodeURIComponent(phone)}&password=${encodeURIComponent(password)}`);
 
+        
     });
 });
     </script>
