@@ -1,0 +1,485 @@
+.account{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #a4ac86;
+}
+
+
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+#searchInput {
+    padding: 10px;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    flex: 1;
+    display: none;
+}
+
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+
+.list li {
+    margin: 0 20px;
+}
+
+.list li:not(:last-child)::after{
+    content: "|" ;
+    margin-left: 30px;
+}
+
+.logo{
+    font-size: 30px;
+    color:#636b54;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+
+.recipes{
+    background-color: #f7f6f3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.recipes img{
+    width: auto;
+    height: auto;
+    max-width: 450px;
+    max-height: 500px;
+}
+
+.recipes p{
+    text-align: center;
+    font-size: 25px;
+    color: #636b54;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+
+.cookbook{
+    background-color:#f7f6f3 ;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 100px;
+}
+
+.cookbook img{
+    width: auto;
+    height:auto;
+    margin-left: 100px;
+    max-width: 300px;
+    max-height: 350px;
+}
+
+.cookbook h1, h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-left: 100px;
+    width: 900px;
+    padding: 5px;
+}
+
+.cookbook p {
+    width: 900px;
+    margin-left: 100px;
+    text-align: center;
+    font-size: 20px;
+    padding: 3px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.cookbook button {
+    margin-top: 20px;
+    padding: 10px 60px;
+    margin-left: 440px;
+}
+
+.aboutme{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-top: 40px;
+    background-color:#f7f6f3 ;
+    gap: 5px;
+}
+
+.aboutme img{
+    width: auto;
+    height:auto;
+    max-width: 450px;
+    max-height: 500px;
+    margin-right: 50px;
+}
+
+.text-aboutme {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 700px;
+}
+
+.aboutme p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0;
+    padding: 40px;
+}
+
+.aboutme h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+
+#t1 {
+    color: #636b54;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+
+.food{
+    background-color: #f7f6f3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.food img{
+    width: auto;
+    height: auto;
+    max-width: 350px;
+    max-height: 400px;
+}
+
+.food button{
+    display: block;
+    margin-top: 5px;
+    padding: 5px;
+    width: 120px;
+}
+
+.food > div p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0px;
+    line-height: 0.5;
+}
+.food2{
+    background-color: #f7f6f3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.food2 img{
+    width: auto;
+    height: auto;
+    max-width: 350px;
+    max-height: 400px;
+}
+
+.food2 button{
+    display: block;
+    margin-top: 5px;
+    padding: 5px;
+    width: 120px;
+}
+
+.food2 > div p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0px;
+    line-height: 0.5;
+}
+
+
+.footer{
+    margin-top: 40px;
+    background-color: #a4ac86;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.footer-1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+.info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info li{
+    color: white;
+    margin: 0 20px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.socialmedia{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-left: 70px;
+    gap: 20px;
+}
+
+.footer-2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    color: white;
+    height: 300px;
+}
+
+#n1, #n2, #n3, #n4{
+    height: auto;
+    padding: 13px 20px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 300px;
+    background-color: #a4ac86;
+    border-color: #636b54;
+    color: white;
+    font-size: 14px;
+}
+
+#n4{
+    background-color: #636b54;
+}
+
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+}
+
+.modal-overlay:target {
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.modal {
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.modal p{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#a1{
+    margin-left: 5px;
+    color: #a4ac86;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    color: #333;
+    text-decoration: none;
+}
+
+.sign-up-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 95%;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    font-size: 1em;
+    color: #ffffff;
+    background-color:#636b54;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+
+.modal-overlay2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+}
+
+.modal-overlay2:target {
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.modal2 {
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.modal2 p{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    color: #333;
+    text-decoration: none;
+}
+
+.log-in-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 95%;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#b2 {
+    width: 100%;
+    padding: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    font-size: 1em;
+    color: #ffffff;
+    background-color:#636b54;
+    border: none;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
