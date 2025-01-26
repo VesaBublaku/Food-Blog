@@ -29,33 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION["signup_success"] = false;
         }
         exit();
-    } elseif (isset($_GET['action']) && $_GET['action'] == "login") {
-        $_SESSION["login"] = [
-            "email" => $_POST["email"],
-            "password" => $_POST["password"]
-        ];
-
-        $email = $_POST["email"];
-        $password = $_POST["password"];
-
-        $sql = "SELECT * FROM user WHERE email = :email";
-        $stmt = $conn->prepare($sql);
-        $stmt->bindParam(':email', $email);
-        $stmt->execute();
-        $user = $stmt->fetch(PDO::FETCH_ASSOC);
-
-        if ($user && password_verify($password, $user["password"])) {
-            $_SESSION["user"] = [
-                "id" => $user["id"],
-                "username" => $user["username"],
-                "email" => $user["email"],
-            ];
-            echo "Login Successful!";
-        } else {
-            echo "Invalid email or password.";
-        }
-        exit();
-    }
+    } 
 }
 ?>
 
