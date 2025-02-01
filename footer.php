@@ -14,10 +14,6 @@
         flex-direction: column;
     }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 21bad21a2a4296634a3b53dff31977f9e9953371
     .info {
         display: flex;
         flex-wrap: wrap;
@@ -99,7 +95,6 @@
                             <h4>Explore</h4>
                         </li>
                     </a>
-<<<<<<< HEAD
                     <a href="/recipe/list.php">
                         <li>Recipes</li>
                     </a>
@@ -107,15 +102,6 @@
                         <li>Shop</li>
                     </a>
                     <a href="/cookbook/index.php">
-=======
-                    <a href="/Food-Blog/recipe/list.php">
-                        <li>Recipes</li>
-                    </a>
-                    <a href="/Food-Blog/shop/index.php">
-                        <li>Shop</li>
-                    </a>
-                    <a href="/Food-Blog/cookbook/index.php">
->>>>>>> 21bad21a2a4296634a3b53dff31977f9e9953371
                         <li>Cookbooks</li>
                     </a>
                 </ul>
@@ -128,7 +114,6 @@
                             <h4>Cookbook</h4>
                         </li>
                     </a>
-<<<<<<< HEAD
                     <a href="/cookbook/index.php#cookbook-1">
                         <li>The First Mess Cookbook</li>
                     </a>
@@ -139,18 +124,6 @@
                         <li>Zaika</li>
                     </a>
                     <a href="/cookbook/index.php#cookbook-4">
-=======
-                    <a href="/Food-Blog/cookbook/index.php#cookbook-1">
-                        <li>The First Mess Cookbook</li>
-                    </a>
-                    <a href="/Food-Blog/cookbook/index.php#cookbook-2">
-                        <li>WELL+GOOD</li>
-                    </a>
-                    <a href="/Food-Blog/cookbook/index.php#cookbook-3">
-                        <li>Zaika</li>
-                    </a>
-                    <a href="/Food-Blog/cookbook/index.php#cookbook-4">
->>>>>>> 21bad21a2a4296634a3b53dff31977f9e9953371
                         <li>Living Bread</li>
                     </a>
                 </ul>

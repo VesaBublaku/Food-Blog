@@ -136,11 +136,7 @@
     <?php include('../menu.php') ?>
 
     <div class="cookbook">
-<<<<<<< HEAD
         <a href="/index.php">Home</a><span>></span>
-=======
-        <a href="/Food-Blog/index.php">Home</a><span>></span>
->>>>>>> 21bad21a2a4296634a3b53dff31977f9e9953371
         <a>Cookbooks</a>
     </div>
 

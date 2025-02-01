@@ -5,11 +5,7 @@ $db = new Database();
 $conn = $db->getConnection();
 
 if (!isset($_SESSION['user'])) {
-<<<<<<< HEAD
-    header('Location: index.php');
-=======
     header('Location: /index.php');
->>>>>>> 21bad21a2a4296634a3b53dff31977f9e9953371
 }
 
 if (isset($_GET["recipeId"]) && isset($_GET["action"])) {
@@ -81,11 +77,7 @@ $recipes = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <?php include('../menu.php') ?>
 
 <div class="collection">
-<<<<<<< HEAD
         <a href="/index.php">Home</a><span>></span>
-=======
-        <a href="/Food-Blog/index.php">Home</a><span>></span>
->>>>>>> 21bad21a2a4296634a3b53dff31977f9e9953371
         <a>My Recipe Collection</a>
     </div>
 
@@ -94,11 +86,7 @@ $recipes = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <div class="recipe-grid">
             <?php foreach ($recipes as $recipe): ?>
                 <div class="recipe-card">
-<<<<<<< HEAD
                     <a href="/recipe/index.php?id=<?php echo $recipe['id'] ?>">
-=======
-                    <a href="/Food-Blog/recipe/index.php?id=<?php echo $recipe['id'] ?>">
->>>>>>> 21bad21a2a4296634a3b53dff31977f9e9953371
                         <img src="<?php echo $recipe['image'] ?>" alt="">
                         <button onclick="removeRecipe(event, <?php echo $recipe['id'] ?>)">Remove</button>
 
@@ -116,18 +104,9 @@ $recipes = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <?php include('../footer.php') ?>
 <script>
     function removeRecipe(event, recipeId) {
-<<<<<<< HEAD
-        event.preventDefault(); // Prevent any default action
-
+        event.preventDefault();
         var xhr = new XMLHttpRequest();
         xhr.open("GET", `/box/index.php?recipeId=${recipeId}&action=remove`, true);
-=======
-        event.preventDefault(); 
-
-        var xhr = new XMLHttpRequest();
-        xhr.open("GET", `/Food-Blog/box/index.php?recipeId=${recipeId}&action=remove`, true);
->>>>>>> 21bad21a2a4296634a3b53dff31977f9e9953371
-
         xhr.onload = function () {
             if (xhr.status === 200) {
                 var button = event.target;

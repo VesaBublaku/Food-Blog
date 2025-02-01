@@ -232,32 +232,6 @@ if (session_status() === PHP_SESSION_NONE) {
 
 <script defer>
     document.addEventListener("DOMContentLoaded", function() {
-
-<<<<<<< HEAD
-        // const loginForm = document.querySelector(".log-in-form");
-        // loginForm.addEventListener("submit", function(event) {
-        //     event.preventDefault();
-
-        //     const email_login = document.getElementById("email_login").value.trim();
-        //     const password_login = document.getElementById("password_login").value.trim();
-
-        //     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        //     if (!emailRegex.test(email_login)) {
-        //         alert("Invalid email address.");
-        //         return false;
-        //     }
-
-        //     if (password_login === "") {
-        //         alert("Password cannot be empty.");
-        //         return false;
-        //     }
-
-        //     alert("Log in successful!");
-        //     window.location.href = "Home-page.html";
-        // });
-
-=======
->>>>>>> 21bad21a2a4296634a3b53dff31977f9e9953371
         const signupForm = document.querySelector(".form.sign-up");
         signupForm.addEventListener("submit", function(event) {
             event.preventDefault();

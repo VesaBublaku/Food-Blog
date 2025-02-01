@@ -4,11 +4,7 @@ if (isset($_GET['slug'])) {
     $allowedCategories = ['drinks', 'dinner', 'dessert', 'breakfast'];
     $category = $_GET['slug'];
     if (!in_array($category, $allowedCategories, true)) {
-<<<<<<< HEAD
-        header('Location: index.php');
-=======
         header('Location: /index.php');
->>>>>>> 21bad21a2a4296634a3b53dff31977f9e9953371
     }
 } else {
     header("location: index.php");
@@ -38,11 +34,7 @@ $recipes = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <?php include('../header.php') ?>
 <?php include('../menu.php') ?>
 <div class="breadcrumb">
-<<<<<<< HEAD
     <a href="/index.php">Home</a> <span>></span>
-=======
-    <a href="/Food-Blog/index.php">Home</a> <span>></span>
->>>>>>> 21bad21a2a4296634a3b53dff31977f9e9953371
     <a><?php echo ucwords($category) ?></a>
 </div>
 
@@ -51,11 +43,7 @@ $recipes = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <div class="recipe-grid">
             <?php foreach ($recipes as $recipe): ?>
                 <div class="recipe-card">
-<<<<<<< HEAD
                     <a href="/recipe/index.php?id=<?php echo $recipe['id'] ?>">
-=======
-                    <a href="/Food-Blog/recipe/index.php?id=<?php echo $recipe['id'] ?>">
->>>>>>> 21bad21a2a4296634a3b53dff31977f9e9953371
                         <img src="<?php echo $recipe['image'] ?>" alt="">
                         <?php if (isset($_SESSION['user'])): ?>
                             <button onclick="toggleRecipe(event, <?php echo $recipe['id'] ?>, 'save')">Save Recipe</button>
@@ -80,12 +68,7 @@ $recipes = $stmt->fetchAll(PDO::FETCH_ASSOC);
         event.preventDefault(); // Prevent any default action
 
         var xhr = new XMLHttpRequest();
-<<<<<<< HEAD
         xhr.open("GET", `/box/index.php?recipeId=${recipeId}&action=${action}`, true);
-=======
-        xhr.open("GET", `/Food-Blog/box/index.php?recipeId=${recipeId}&action=${action}`, true);
->>>>>>> 21bad21a2a4296634a3b53dff31977f9e9953371
-
         xhr.onload = function () {
             if (xhr.status === 200) {
                 const button = event.target;
@@ -101,11 +84,6 @@ $recipes = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 alert('An error occurred. Please try again.');
             }
         };
-<<<<<<< HEAD
-
-        // For GET requests, you can simply call send() without any data.
-=======
->>>>>>> 21bad21a2a4296634a3b53dff31977f9e9953371
         xhr.send();
     }
 </script>
