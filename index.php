@@ -52,7 +52,7 @@ $recipes = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <?php if (!empty($categories)): ?>
         <?php foreach ($categories as $category): ?>
             <div class="category-card">
-                <a href="/Food-Blog/category/index.php?slug=<?php echo $category['slug'] ?>">
+                <a href="/category/index.php?slug=<?php echo $category['slug'] ?>">
                     <img src="<?php echo $category['image'] ?>" alt="">
                     <p><?php echo $category['name'] ?></p>
                 </a>

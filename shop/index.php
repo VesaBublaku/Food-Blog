@@ -208,7 +208,7 @@ session_start();
     <?php include('../menu.php') ?>
 
     <div class="shop">
-        <a href="/Food-Blog/index.php">Home</a><span>></span>
+        <a href="/index.php">Home</a><span>></span>
         <a>Shop</a>
     </div>
 
