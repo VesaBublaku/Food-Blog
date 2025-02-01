@@ -233,6 +233,7 @@ if (session_status() === PHP_SESSION_NONE) {
 <script defer>
     document.addEventListener("DOMContentLoaded", function() {
 
+<<<<<<< HEAD
         // const loginForm = document.querySelector(".log-in-form");
         // loginForm.addEventListener("submit", function(event) {
         //     event.preventDefault();
@@ -255,6 +256,8 @@ if (session_status() === PHP_SESSION_NONE) {
         //     window.location.href = "Home-page.html";
         // });
 
+=======
+>>>>>>> 21bad21a2a4296634a3b53dff31977f9e9953371
         const signupForm = document.querySelector(".form.sign-up");
         signupForm.addEventListener("submit", function(event) {
             event.preventDefault();

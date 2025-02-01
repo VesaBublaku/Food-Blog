@@ -51,6 +51,7 @@
 <div class="nav">
     <div class="logo">Bite by Bite</div>
     <ul class="list" type="none">
+<<<<<<< HEAD
         <li><a href="/index.php">Home</a></li>
         <li><a href="/recipe/list.php">Recipes</a></li>
         <li><a href="/shop/index.php">Shop</a></li>
@@ -60,6 +61,17 @@
         <?php endif; ?>
         <?php if (isset($_SESSION['user']) && $_SESSION['user']['role'] == 'admin'): ?>
             <li><a href="/admin/index.php">Admin</a></li>
+=======
+        <li><a href="/Food-Blog/index.php">Home</a></li>
+        <li><a href="/Food-Blog/recipe/list.php">Recipes</a></li>
+        <li><a href="/Food-Blog/shop/index.php">Shop</a></li>
+        <li><a href="/Food-Blog/cookbook/index.php">Cookbooks</a></li>
+        <?php if (isset($_SESSION['user'])): ?>
+            <li><a href="/Food-Blog/box/index.php">My Recipe Box</a></li>
+        <?php endif; ?>
+        <?php if (isset($_SESSION['user']) && $_SESSION['user']['role'] == 'admin'): ?>
+            <li><a href="/Food-Blog/admin/index.php">Admin</a></li>
+>>>>>>> 21bad21a2a4296634a3b53dff31977f9e9953371
         <?php endif; ?>
     </ul>
 
@@ -69,6 +81,7 @@
             <i class="fas fa-search"></i>
         </div>
     </div>
+<<<<<<< HEAD
 </div>
 
 <!--<script>-->
@@ -76,3 +89,6 @@
 <!--        window.location.href = `/search/index.php?q=texti_ne_input`;-->
 <!--    }-->
 <!--</script>-->
+=======
+</div>
+>>>>>>> 21bad21a2a4296634a3b53dff31977f9e9953371
